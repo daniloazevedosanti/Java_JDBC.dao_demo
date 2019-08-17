@@ -35,6 +35,11 @@ public class Program {
 		seller.setName("Martha Waine");
 		sellerDao.update(seller);
 		System.out.println("Update Complete!");
+		
+		System.out.println("\n=== Teste 6: seller delete ===");
+		//seller = sellerDao.findById(10);
+		sellerDao.deleteById(9);
+		System.out.println("Delete Complete!");
 	}
 
 }
